@@ -37,7 +37,7 @@ $ python turtle_graph.py
 + vscode
 
 ## if you want learn more
-+ here is a link!
++ here is a link!   
 [link](https://youtu.be/JHAcgz4XUK0)
 
 ## main content
@@ -56,7 +56,7 @@ $ python turtle_graph.py
 # sub content
 `go_origin() function`
 + function
-    + go to the origin that is (0,0)
+    + go to the origin that is (0,0)   
 `line() function`
 + function
     + Draws x axis, y axis and graded line
