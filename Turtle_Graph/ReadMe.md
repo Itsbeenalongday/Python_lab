@@ -1,6 +1,6 @@
 # Turtle graph
 
-## This repository was built for a turtle grab project.
+## This repository was built for a turtle graph project.
 
 + program example
 
