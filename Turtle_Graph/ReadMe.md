@@ -56,7 +56,8 @@ $ python turtle_graph.py
 # sub content
 `go_origin() function`
 + function
-    + go to the origin that is (0,0)   
+    + go to the origin that is (0,0)  
+
 `line() function`
 + function
     + Draws x axis, y axis and graded line
