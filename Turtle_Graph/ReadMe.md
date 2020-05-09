@@ -1,6 +1,6 @@
 # Turtle graph
 
-## This repository inclues turtle graph project
+## This repository was built for a turtle grab project.
 
 + program example
 
@@ -17,6 +17,24 @@
     # t.Screen().reset()
 
 ```
+
+## excute
+1. prepare run enviroment
+```
+vscode 
+ctrl + ~ => run terminal in editor
+in windows10 terminal run using windows power shell
+in wsl terminal run using bash
+etc...
+```
+2. type this instruction
+```shell
+$ python turtle_graph.py
+```
+
+## develope enviroment
++ windows10 
++ vscode
 
 ## if you want learn more
 + here is a link!
