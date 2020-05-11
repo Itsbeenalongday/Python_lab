@@ -5,7 +5,7 @@ b = "String_B"
 print('--------Sep-----------')
 print("Defualt    -",a,b)
 print("Sep=$$$    -",a,b,sep='$$$')
-print("Sep=\_n    -",a,b,sep='\n')
+print("Sep=\_n    -",a,b,sep='\n') ## 앞에 \n을 그냥쓰면 거기 줄바꿈
 print("Sep=''     -",a,b,sep='')
 print('--------End-----------')
 print("End=''     -",a,b,end='=====\n')
