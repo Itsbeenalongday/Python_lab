@@ -1,7 +1,7 @@
 # a b c 
 # d e f 
 # g h i
-# 가지치기
+# branch with backtracking
 import time
 q = input('디버깅 모드를 실행하시려면 y 아니면 아무키나 눌러주세요 >>> ')
 answer = 0
