@@ -26,5 +26,5 @@ $ echo n | python 3x3.py >> 3x3_test.txt
         + 마방진의 수학적원리에 근거 대칭성, 홀수와 짝수의 관계 활용
 
 # log
->   modify date: 2020-05-26 am02:23
+>   modify date: 2020-05-26 am02:23   
 >   editor: seongminyoo
