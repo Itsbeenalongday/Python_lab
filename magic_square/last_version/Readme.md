@@ -1,4 +1,5 @@
 # last version draft
+
 `algorithm introduce`
 + 첫번째 숫자인 1을 맨윗 행 중간열에 배치한다.
 + 두번째 수부터는 오른쪽 대각선 위로 이동하며 숫자를 배치한다. 행렬의 범위를 넘어가면 반대쪽 끝으로 돌아온다.
@@ -9,5 +10,5 @@
 2. 90회전 x 4개
 총 8개
 
-`reference`
+`reference`   
 그림 참조
