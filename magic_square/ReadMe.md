@@ -25,6 +25,7 @@ stderr에 다음과 예와 같이 출력한다.
 5. 최종적 답의 수와 걸린 시간을 출력한다.
 
 + result
+
 ![result image](./results/3x3 결과.jpeg)
 
 ## n x n 마방진
