@@ -26,6 +26,6 @@ stderr에 다음과 예와 같이 출력한다.
 
 + result
 
-![result image](https://git.ajou.ac.kr/seongminyoo/python_lab/-/raw/master/magic_square/results/3x3%20%EA%B2%B0%EA%B3%BC.jpeg)
+<img src = './results/3x3 결과.jpeg'> </img>
 
 ## n x n 마방진
