@@ -33,20 +33,19 @@ for i in sys.stdin.readlines(): # stdin을 line by line으로 모두 읽어들�
         magic_square = np.append(magic_square,candidates) # 1차원으로 받음
         magic_square = magic_square.reshape(n_magic,n_magic) # n x n 으로 변형
         magic_square = magic_square.astype('int64') # integer로 변경
+        ans = " ".join(map(str,candidates))
         # 대각선 합, 행들의 합, 열들의 합을 각각 구하고 모두 같은지 확인
-        with warnings.catch_warnings():
-            warnings.simplefilter("ignore")
-            if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
-                if(check_sum_is_same(sum_matrix(magic_square,0))): # 열
-                    if(sum_digonal_matrix(magic_square,0) == sum_digonal_matrix(magic_square,1)): # 두 대각선
-                        if(sum_digonal_matrix(magic_square,0) == sum_matrix(magic_square,0,True) == sum_matrix(magic_square,1,True)): # 두 대각선 = 행의 합 = 열의 합 체크
-                            print('정답입니다.')
-                    else:
-                        print('정답이 아닙니다.')
+        if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
+            if(check_sum_is_same(sum_matrix(magic_square,0))): # 열
+                if(sum_digonal_matrix(magic_square,0) == sum_digonal_matrix(magic_square,1)): # 두 대각선
+                    if(sum_digonal_matrix(magic_square,0) == sum_matrix(magic_square,0,True) == sum_matrix(magic_square,1,True)): # 두 대각선 = 행의 합 = 열의 합 체크
+                        print(ans + '- True')
                 else:
-                    print('정답이 아닙니다')
+                    print(ans + '- False')
             else:
-                print('정답이 아닙니다.')
+                print(ans + '- False')
+        else:
+            print(ans + '- False')
     else:
         print('마방진의 형태가 아닙니다.')
 print('총 걸린 시간 : ' + str(time.time()- startTime) + '초 입니다.')
