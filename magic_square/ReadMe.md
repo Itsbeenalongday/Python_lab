@@ -26,6 +26,6 @@ stderr에 다음과 예와 같이 출력한다.
 
 + result
 
-![result image](./results/3x3 결과.jpeg)
+<img src = './results/3x3 결과.jpeg'> </img>
 
 ## n x n 마방진
