@@ -79,6 +79,6 @@ if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
 + test 5x5
 <img src = './results/결과5.PNG'> </img>
 + test 12x12
-<img src = './results/결과12.PNG' width = "1000" height = "1000"> </img>
+<img src = './results/결과12.PNG' width = "1000" height = "500"> </img>
 
     
