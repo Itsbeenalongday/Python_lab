@@ -73,7 +73,7 @@ if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
 
 ## result
 + test 3x3
-![](./results/결과 1.jpeg)
+![](./results/결과1.jpeg)
 + test 3x3
 ![](./results/결과123456789.jpeg)
 
