@@ -73,12 +73,12 @@ if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
 
 ## result
 + test 3x3
-<img src = './results/결과 1.png'> </img>
+<img src = './results/결과 1.jpeg'> </img>
 + test 3x3
-<img src = './results/결과123456789.png'> </img>
+<img src = './results/결과123456789.jpeg'> </img>
 + test 5x5
-<img src = './results/결과5.png'> </img>
+<img src = './results/결과5.jpeg'> </img>
 + test 12x12
-<img src = './results/결과12.png'> </img>
+<img src = './results/결과12.jpeg'> </img>
 
     
