@@ -122,7 +122,7 @@ if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
 
 ![](./results/4x4결과.PNG)
 
-![](./results/결과44.PNG)
+![](./results/결과4.PNG)
 
 ![](./results/결과44.PNG)
 
