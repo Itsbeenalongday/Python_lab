@@ -54,7 +54,7 @@ stderr에 다음 예와 같이 출력한다.
 15. 1,2사분면합 == 3,4분면합 까지 같다면
 16. 마방진을 만족하는 것이므로 정답으로 출력하고, 정답의 개수인 count를 센다.
 ```
-![](./results/결과4.png)
+
 ## test n x n 마방진
 + requirement
 ```
@@ -121,5 +121,5 @@ if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
 + 마방진 4x4 3465개 테스트
 ![](./results/4x4 결과.png)
 ![](./results/결과44.png)
-
+![](./results/결과44.png)
     
