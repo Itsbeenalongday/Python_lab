@@ -6,10 +6,13 @@ import sys
 from itertools import permutations
 startTime = time.time()
 answer = 0
+def nextSqure(n):
+    sqrt = n ** (1/2)
+    return True if sqrt == int(sqrt) else False
 def count(arr):
     # list의 모든 요소가 같은 값 평균내면 자신이 나온다.
     global answer
-    if sum(arr)/(3*3) == arr[0]:
+    if sum(arr)/(3*3) == arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8]:
         print(*arr, sep=' ')
         answer = 1
         return
@@ -18,13 +21,18 @@ def count(arr):
         if sum(m[0:3]) == sum(m[3:6]) == sum(m[6:9]) == m[0]+m[3]+m[6] == m[1]+m[4]+m[7] == m[2]+m[5]+m[8] == m[0]+m[4]+m[8] == m[2]+m[4]+m[6]:
             print(*m, sep=' ')
             answer += 1 # 정답 1개 추가
-
-candidates = sys.argv
-if(len(candidates) != 10): 
-    print('3 x 3 마방진인지 확인하려면 9개의 숫자를 입력하세요.',file = sys.stderr)
-    sys.exit()
-candidates.pop(0) # 프로그램의 이름은 제외
-candidates = list(map(int,candidates)) # 입력 받고 공백 기준으로 parsing 후 list로 만들고,list에서 하나씩 꺼내서 int형으로 변환한다.
+while(flag):
+    try:
+        flag = False
+        candidates = list(map(int,str.split(input('9개 숫자를 입력하세요 >>> '))))
+    except ValueError:
+            flag = True                   
+            print('숫자를 입력해주세요...',file = sys.stderr)
+    except EOFError:
+        flag = True
+        print('eof error',file = sys.stderr)
+if(nextSqure(len(candidates))):
+    print('3 x 3 마방진의 형태가 아닙니다',file = sys.stderr)
 count(candidates)# 알고리즘 수행
 if answer == 0:
     print(*candidates, sep=' ')

@@ -20,6 +20,7 @@ def sum_digonal_matrix(arr, direction):
 def check_sum_is_same(arr):
     return True if (np.sum(arr) // len(arr)) == arr[0] else False
 # 일단 1차원의 행렬로 1xn^2으로 받고 reshape(n,n)한다. 그리고 진행
+count = 0
 startTime = time.time()
 while True:
     try:
@@ -30,6 +31,7 @@ while True:
         elif nextSqure(len(candidates)) == False: # nxn이 아닌 것 예외 처리
             print('not magic square form',file=sys.stderr)
             break
+        # 중복 답안 처리
         else:
             n_magic = len(candidates) ** (1/2) # n x n 마방진
             n_magic = int(n_magic) # 결과가 실수이므로 정수로 바꾼다.
@@ -44,6 +46,7 @@ while True:
                     if(sum_digonal_matrix(magic_square,0) == sum_digonal_matrix(magic_square,1)): # 두 대각선
                         if(sum_digonal_matrix(magic_square,0) == sum_matrix(magic_square,0,True) == sum_matrix(magic_square,1,True)): # 두 대각선 = 행의 합 = 열의 합 체크
                             print(ans + '- True')
+                            count += 1
                     else:
                         print(ans + '- False')
                 else:
@@ -52,4 +55,5 @@ while True:
                 print(ans + '- False')
     except ValueError:                   
         print('input is not number')
+print('답의 총 개수는 '+ str(count) +'개 입니다.',file=sys.stderr)
 print('총 걸린 시간 : ' + str(time.time()- startTime) + '초 입니다.')
