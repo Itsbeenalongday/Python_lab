@@ -120,7 +120,7 @@ if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
 
 + 마방진 4x4 3465개 테스트
 
-![](./results/4x4 결과.PNG)
+![](./results/4x4결과.PNG)
 
 ![](./results/결과44.PNG)
 
