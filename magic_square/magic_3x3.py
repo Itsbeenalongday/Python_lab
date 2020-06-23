@@ -6,6 +6,7 @@ import sys
 from itertools import permutations
 startTime = time.time()
 answer = 0
+flag = True
 def nextSqure(n):
     sqrt = n ** (1/2)
     return True if sqrt == int(sqrt) else False
