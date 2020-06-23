@@ -118,7 +118,7 @@ if(check_sum_is_same(sum_matrix(magic_square,1))): # 행
 
 ![](./results/결과12.jpeg)
 
-+ 마방진 4x4 3465개 테스트
++ 마방진 4x4 3456개 테스트
 
 ![](./results/4x4결과.PNG)
 
