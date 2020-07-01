@@ -31,7 +31,6 @@ while True:
         elif nextSqure(len(candidates)) == False: # nxn이 아닌 것 예외 처리
             print('not magic square form',file=sys.stderr)
             break
-        # 중복 답안 처리
         else:
             n_magic = len(candidates) ** (1/2) # n x n 마방진
             n_magic = int(n_magic) # 결과가 실수이므로 정수로 바꾼다.
